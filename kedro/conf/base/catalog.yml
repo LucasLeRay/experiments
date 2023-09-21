@@ -1,0 +1,12 @@
+# Here you can define all your data sets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://docs.kedro.org/en/stable/data/data_catalog.html
+
+taxi:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/taxi.csv
+
+processed_taxi:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediary/taxi.csv
